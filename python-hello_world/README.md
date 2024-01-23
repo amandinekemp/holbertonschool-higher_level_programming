@@ -1,6 +1,6 @@
 # Python - Hello, World
 
-<p align="center">![Python - Hello, World](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjbX8IXMiGZrzUlNI2ipKtdAdLApDDL7KkA&usqp=CAU)</p>
+![Python - Hello, World](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjbX8IXMiGZrzUlNI2ipKtdAdLApDDL7KkA&usqp=CAU)
 
 ----------
 
@@ -10,18 +10,13 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* []()
-* []()
-* []()
-* []()
-* []()
-
-
-----------
-
-## ➤ Description:
-
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world#-description)
+* [➤ Author’s disclaimer](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world#-authors-disclaimer)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world#-resources)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world#-requirements)
+* [➤ More Info](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world#-more-info)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world#-tasks)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world#-author)
 
 ----------
 
