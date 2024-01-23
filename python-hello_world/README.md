@@ -1,6 +1,8 @@
 # Python - Hello, World
 
+<center>
 ![Python - Hello, World](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjbX8IXMiGZrzUlNI2ipKtdAdLApDDL7KkA&usqp=CAU)
+</center>
 
 ----------
 
