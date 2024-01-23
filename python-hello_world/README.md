@@ -51,6 +51,64 @@ Use this playlist as long as you are learning Python:
 
 ----------
 
+## ➤ General:
+
+* How to use the Python interpreter ?
+To use the Python interpreter :
+
+Install Python: Download and install the latest version from https://www.python.org/downloads/.
+
+Open the terminal: Launch the terminal (or command prompt) and type python or python3.
+
+Python prompt: The >>> prompt indicates that you are in the Python interpreter.
+
+Enter commands: Enter Python commands such as print("Hello, World!").
+
+Exit the interpreter: Type exit() or quit(), or use Ctrl + Z (Windows) or Ctrl + D (Linux/Mac).
+
+The Python interpreter lets you quickly execute commands to test code ideas.
+
+* How to print text and variables using print ?
+To print text and variables in Python with `print` :
+
+1. Use `print("Hello")` to display text.
+
+2. Use commas to print variables with text, such as `print("Hello", name)`.
+
+3. Concatenate strings with `+`, for example `print("I'm " + str(age) + " years old")`.
+
+4. Use f-strings to embed variables in a string, like `print(f "Hi, {firstname}")`.
+
+* How to use strings ?
+Using strings in Python :
+
+1. **Create :** Use ' ', " ", or ''' ''' to define strings.
+
+2. **Access :** Index for characters, e.g. `mot[0]` for 'P'.
+
+3. **Splitting:** Splitting notation, e.g. `phrase[8:14]` for "Python".
+
+4. **Concatenation :** `+` to join strings, e.g. `firstname + " " + lastname`.
+
+5. **Length :** `len()` for length, e.g. `len("Python")` for 6.
+
+6. **Methods :** Use methods such as `upper()`, `lower()`, etc.
+
+* What are indexing and slicing in Python ?
+In Python, indexing allows access to a specific element in a sequence with `sequence[index]`, while slicing extracts a portion with `sequence[start:end]`. These techniques are crucial for manipulating sequences such as strings, lists and tuples. Indexing starts at 0, negative indices count from the end, and slicing uses a range (inclusive:exclusive). Understanding these concepts is essential for working efficiently with sequential data in Python.
+
+* What is the official Python coding style and how to check your code with pycodestyle ?
+The official Python coding style, defined in PEP 8, recommends the use of four-space indentation, limiting line width to 79 characters for code and 72 characters for comments and docstrings, organized imports, spaces around operators, and the use of docstrings for documentation.
+
+To check compliance with PEP 8 style, use `pycodestyle` :
+1. Install `pycodestyle` with `pip install pycodestyle`.
+2. Check a file or directory with `pycodestyle path_to_your_code`.
+
+Respecting this style contributes to the consistency and readability of Python code, facilitating collaboration within the development community. shorter summary
+
+* What is the "Zen of Python"?
+The this in Python module contains the "Zen of Python", a series of language design principles. These principles, written by Tim Peters, guide developers towards the creation of readable, elegant and efficient Python code. To display these principles, use import this in a Python script.
+
 ## ➤ Requirements:
 
 **Python Scripts**
