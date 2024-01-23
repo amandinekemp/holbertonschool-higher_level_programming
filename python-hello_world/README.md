@@ -1,6 +1,6 @@
 # Python - Hello, World
 
-![Python - Hello, World](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjbX8IXMiGZrzUlNI2ipKtdAdLApDDL7KkA&usqp=CAU)
+<p align="center">![Python - Hello, World](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjbX8IXMiGZrzUlNI2ipKtdAdLApDDL7KkA&usqp=CAU)</p>
 
 ----------
 
@@ -34,7 +34,7 @@ Python has a linter / style guide, called PEP8, also now known as PyCode. At Hol
 
 Enjoy!
 
-- Guillaume
+Guillaume
 
 ----------
 
@@ -129,7 +129,7 @@ Repo:
 
 ----------
 
-2. Print float
+### 2. Print float
 
 Complete the source code in order to print the float stored in the variable `number` with a precision of 2 digits.
 
@@ -153,7 +153,7 @@ Repo:
 
 ----------
 
-3. Print string
+### 3. Print string
 
 Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
 
@@ -181,7 +181,7 @@ Repo:
 
 ----------
 
-4. Play with strings
+### 4. Play with strings
 
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/6-concat.py) to print `Welcome to Holberton School!`
 
@@ -206,7 +206,7 @@ Repo:
 
 ----------
 
-5. Copy - Cut - Paste
+### 5. Copy - Cut - Paste
 
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/7-edges.py)
 
@@ -235,7 +235,7 @@ Repo:
 
 ----------
 
-6. Create a new sentence
+### 6. Create a new sentence
 
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/8-concat_edges.py) to print `object-oriented programming with Python`, followed by a new line. 
 
@@ -261,7 +261,7 @@ File: 8-concat_edges.py
 
 ----------
 
-7. Easter Egg
+### 7. Easter Egg
 
 Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 
