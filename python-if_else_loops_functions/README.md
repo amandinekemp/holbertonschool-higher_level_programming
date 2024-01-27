@@ -1,4 +1,4 @@
-![Python - if/else, loops, functions]()
+![Python - if/else, loops, functions](https://datascientest.com/en/wp-content/uploads/sites/9/2023/11/python-if-else.webp)
 
 ----------
 
@@ -8,16 +8,61 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ Requirements]()
-* [➤ More Info]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions#-resources)
+* [➤ Genera](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions#-tasks)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions#-author)
 
 ----------
 
 ## ➤ Description:
+
+**if/else statements in Python:**
+
+The if and else statements are used to create conditional structures in Python. They allow different blocks of code to be executed depending on the evaluation of a condition. If the condition is true, the block of instructions associated with if is executed, otherwise the block associated with else (if present) is executed.
+
+* Example:
+
+```bash
+x = 10
+if x > 0:
+    print("Positive")
+else:
+    print("Non-positive")
+```
+
+**Python loops :**
+
+Description: Loops allow you to execute a block of code several times. In Python, the two most common types of loop are for (to iterate over a sequence) and while (to iterate as long as a condition is true).
+
+* Example (for loop):
+
+```bash
+for i in range(5):
+    print(i)
+
+Example (while loop) :
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+```
+
+**Functions in Python:**
+
+Description: Functions are reusable blocks of code. They take arguments as input, perform processing and may return a result. Functions allow you to organize your code in a modular way.
+
+* Example :
+
+```bash
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(3, 7)
+print(result)
+```
 
 ----------
 
@@ -85,11 +130,6 @@ This program will assign a random signed number to the variable `number` each ti
   * if the number is less than 0: `is negative`
  * followed by a new line
 
-
- <div>
-
-<title>Tests</title>
-
 ```bash
 guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
 -4 is negative
@@ -111,13 +151,12 @@ guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 5 is positive
 guillaume@ubuntu:~/$ 
 ```
- </div>
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 0-positive_or_negative.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 0-positive_or_negative.py
   
 ### 1. The last digit
 
@@ -162,9 +201,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 1-last_digit.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 1-last_digit.py
   
 ### 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game	
 
@@ -182,9 +221,9 @@ abcdefghijklmnopqrstuvwxyzguillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 2-print_alphabet.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 2-print_alphabet.py
   
 ### 3. When I was having that alphabet soup, I never thought that it would pay off
 
@@ -203,9 +242,9 @@ abcdfghijklmnoprstuvwxyzguillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 3-print_alphabt.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 3-print_alphabt.py
   
 ### 4. Hexadecimal printing
 
@@ -246,9 +285,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 4-print_hexa.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 4-print_hexa.py
   
 ### 5. 00...99
 
@@ -270,9 +309,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 5-print_comb2.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 5-print_comb2.py
   
 ### 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
 
@@ -297,9 +336,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 6-print_comb3.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 6-print_comb3.py
   
 ### 7. islower
 
@@ -336,9 +375,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 7-islower.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 7-islower.py
   
 ### 8. To uppercase
 
@@ -369,9 +408,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 8-uppercase.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 8-uppercase.py
   
 ### 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 
@@ -400,9 +439,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 9-print_last_digit.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 9-print_last_digit.py
 
   
 ### 10. a + b
@@ -433,9 +472,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 10-add.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 10-add.py
   
 ### 11. a ^ b
 
@@ -469,9 +508,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 11-pow.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 11-pow.py
   
 ### 12. Fizz Buzz
 
@@ -500,9 +539,9 @@ guillaume@ubuntu:~/$
 
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-if_else_loops_functions
-File: 12-fizzbuzz.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-if_else_loops_functions
+* File: 12-fizzbuzz.py
 
 ----------
 
