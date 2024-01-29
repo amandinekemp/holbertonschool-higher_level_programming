@@ -1,8 +1,4 @@
-<div style="text-align: center;">
-
-![Python - import & modules](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1stqDs1XtZymq9uz5W9eMZcvJRczG2d9tA&usqp=CAU)
-
-</div>
+[center]![Python - import & modules](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1stqDs1XtZymq9uz5W9eMZcvJRczG2d9tA&usqp=CAU)[/center]
 
 ----------
 
