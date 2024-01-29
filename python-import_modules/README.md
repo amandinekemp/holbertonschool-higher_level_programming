@@ -12,9 +12,16 @@
 
 ## ➤ Menu:
 
+[➤ Description](#){.btn .btn-default}
+[➤ Resources](#){.btn .btn-primary}
+[➤ General](#){.btn .btn-info}
+[➤ Requirements](#){.btn .btn-success}
+[➤ Tasks](#){.btn .btn-warning}
+[➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-author){.btn .btn-danger}
+
 * [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-description)
 * [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-resources)
-* [➤ Genera](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-general)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-general)
 * [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-requirements)
 * [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-tasks)
 * [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-author)
