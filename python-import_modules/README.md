@@ -1,4 +1,6 @@
-[center]![Python - import & modules](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1stqDs1XtZymq9uz5W9eMZcvJRczG2d9tA&usqp=CAU)[/center]
+<p align="center">
+    <img [Python - import & modules] src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1stqDs1XtZymq9uz5W9eMZcvJRczG2d9tA&usqp=CAU">
+</p>
 
 ----------
 
@@ -7,14 +9,6 @@
 ----------
 
 ## ➤ Menu:
-
-[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-description" button_type="default" button_label="➤ Description"][/g-button]
-[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-resources" button_type="primary" button_label="➤ Resources"][/g-button]
-[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-general" button_type="success" button_label="➤ General"][/g-button]
-[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-requirements" button_type="info" button_label="➤ Requirements"][/g-button]
-[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-tasks" button_type="warning" button_label="➤ Tasks"][/g-button]
-[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-author" button_type="danger" button_label="➤ Author"][/g-button]
-
 
 * [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-description)
 * [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-resources)
