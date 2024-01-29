@@ -12,12 +12,13 @@
 
 ## ➤ Menu:
 
-[➤ Description](#){.btn .btn-default}
-[➤ Resources](#){.btn .btn-primary}
-[➤ General](#){.btn .btn-info}
-[➤ Requirements](#){.btn .btn-success}
-[➤ Tasks](#){.btn .btn-warning}
-[➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-author){.btn .btn-danger}
+[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-description" button_type="default" button_label="➤ Description"][/g-button]
+[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-resources" button_type="primary" button_label="➤ Resources"][/g-button]
+[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-general" button_type="success" button_label="➤ General"][/g-button]
+[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-requirements" button_type="info" button_label="➤ Requirements"][/g-button]
+[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-tasks" button_type="warning" button_label="➤ Tasks"][/g-button]
+[g-button button_url="https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-author" button_type="danger" button_label="➤ Author"][/g-button]
+
 
 * [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-description)
 * [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-resources)
