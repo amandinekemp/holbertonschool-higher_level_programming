@@ -1,4 +1,6 @@
+<div style="text-align: center;">
 ![Python - import & modules](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1stqDs1XtZymq9uz5W9eMZcvJRczG2d9tA&usqp=CAU)
+</div>
 
 ----------
 
@@ -8,12 +10,12 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ Genera]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-resources)
+* [➤ Genera](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-tasks)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules#-author)
 
 ----------
 
