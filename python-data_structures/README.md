@@ -10,12 +10,12 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ General]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-data_structures#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-data_structures#-resources)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-data_structures#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-data_structures#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-data_structures#-tasks)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-data_structures#-author)
 
 ----------
 
