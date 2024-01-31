@@ -25,9 +25,9 @@
 
 A set is an unordered collection of unique elements. In Python, sets are defined using `{}` braces. The main characteristics of sets are :
 
-- Uniqueness:** Sets admit no duplicates. Each element of a set is unique.
-- Unordered:** The elements of a set have no fixed position, and there is no defined order.
-- Mutable:** Sets are mutable, meaning that you can add or delete elements after they have been created.
+- **Uniqueness:** Sets admit no duplicates. Each element of a set is unique.
+- **Unordered:** The elements of a set have no fixed position, and there is no defined order.
+- **Mutable:** Sets are mutable, meaning that you can add or delete elements after they have been created.
 
 **Example:**
 ```python
@@ -38,9 +38,9 @@ set_a = {1, 2, 3, 4, 5}
 
 A dictionary is a collection of key-value elements, where each key must be unique. In Python, dictionaries are defined using `{}` braces with key-value pairs separated by commas. The main characteristics of dictionaries are :
 
-- Key-Value:** Each element of the dictionary is a key-value pair, where the key is used to access the associated value.
-- Mutability:** Dictionaries are mutable, meaning you can add, delete or modify key-value pairs.
-- Unordered (before Python 3.7) :** Before Python 3.7, dictionaries had no defined order. Starting with Python 3.7, the insertion order is preserved.
+- **Key-Value:** Each element of the dictionary is a key-value pair, where the key is used to access the associated value.
+- **Mutability:** Dictionaries are mutable, meaning you can add, delete or modify key-value pairs.
+- **Unordered (before Python 3.7) :** Before Python 3.7, dictionaries had no defined order. Starting with Python 3.7, the insertion order is preserved.
 
 **Example :**
 ```python
