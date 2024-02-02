@@ -25,7 +25,7 @@ The if and else statements are used to create conditional structures in Python. 
 
 * Example:
 
-```bash
+```python
 x = 10
 if x > 0:
     print("Positive")
@@ -39,7 +39,7 @@ Description: Loops allow you to execute a block of code several times. In Python
 
 * Example (for loop):
 
-```bash
+```python
 for i in range(5):
     print(i)
 
@@ -56,7 +56,7 @@ Description: Functions are reusable blocks of code. They take arguments as input
 
 * Example :
 
-```bash
+```python
 def add_numbers(a, b):
     return a + b
 
@@ -130,7 +130,10 @@ This program will assign a random signed number to the variable `number` each ti
   * if the number is less than 0: `is negative`
  * followed by a new line
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
 -4 is negative
 guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
@@ -151,6 +154,7 @@ guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 5 is positive
 guillaume@ubuntu:~/$ 
 ```
+</details>
 
 Repo:
 
@@ -173,7 +177,11 @@ This program will assign a random signed `number` to the variable number each ti
   * if the last digit is 0: the string `and is 0`
   * if the last digit is less than 6 and not 0: the string `and is less than 6 and not 0`
  * followed by a new line
-```bash
+
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ ./1-last_digit.py
 Last digit of 4205 is 5 and is less than 6 and not 0
 guillaume@ubuntu:~/$ ./1-last_digit.py
@@ -198,6 +206,8 @@ guillaume@ubuntu:~/$ ./1-last_digit.py
 Last digit of 5169 is 9 and is greater than 5
 guillaume@ubuntu:~/$
 ```
+</details>
+
 
 Repo:
 
@@ -214,10 +224,14 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 * You are not allowed to store characters in a variable
 * You are not allowed to import any module
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ ./2-print_alphabet.py
 abcdefghijklmnopqrstuvwxyzguillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -235,10 +249,14 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 * You are not allowed to store characters in a variable
 * You are not allowed to import any module
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ ./3-print_alphabt.py
 abcdfghijklmnoprstuvwxyzguillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -255,7 +273,10 @@ Write a program that prints all numbers from `0` to `98` in decimal and in hexad
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ ./4-print_hexa.py
 0 = 0x0
 1 = 0x1
@@ -282,6 +303,7 @@ guillaume@ubuntu:~/$ ./4-print_hexa.py
 98 = 0x62
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -301,11 +323,15 @@ Write a program that prints numbers from `0` to `99`.
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ ./5-print_comb2.py
 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99
 guillaume@ubuntu:~/$ 
 ```
+</details>
 
 Repo:
 
@@ -328,11 +354,15 @@ Write a program that prints all possible different combinations of two digits.
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ ./6-print_comb3.py
 01, 02, 03, 04, 05, 06, 07, 08, 09, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 34, 35, 36, 37, 38, 39, 45, 46, 47, 48, 49, 56, 57, 58, 59, 67, 68, 69, 78, 79, 89
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -353,7 +383,10 @@ Write a function that checks for lowercase character.
 
 *You don’t need to understand `__import__`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 7-main.py
 #!/usr/bin/env python3
 islower = __import__('7-islower').islower
@@ -372,6 +405,7 @@ A is upper
 g is lower
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -392,7 +426,10 @@ Write a function that prints a string in uppercase followed by a new line.
 
 You don’t need to understand `__import__`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 8-main.py
 #!/usr/bin/env python3
 uppercase = __import__('8-uppercase').uppercase
@@ -405,6 +442,8 @@ BEST
 BEST SCHOOL 98 BATTERY STREET
 guillaume@ubuntu:~/$ 
 ```
+</details>
+
 
 Repo:
 
@@ -422,7 +461,10 @@ Write a function that prints the last digit of a number.
 
 You don’t need to understand `__import__`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 9-main.py
 #!/usr/bin/env python3
 print_last_digit = __import__('9-print_last_digit').print_last_digit
@@ -436,6 +478,7 @@ guillaume@ubuntu:~/$ ./9-main.py
 8044
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -454,7 +497,10 @@ Write a function that adds two integers and returns the result.
 
 You don’t need to understand `__import__`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 10-main.py
 #!/usr/bin/env python3
 add = __import__('10-add').add
@@ -469,6 +515,7 @@ guillaume@ubuntu:~/$ ./10-main.py
 98
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -486,7 +533,10 @@ Write a function that computes `a` to the power of `b` and return the value.
 
 You don’t need to understand `__import__`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/env python3
 pow = __import__('11-pow').pow
@@ -505,6 +555,7 @@ guillaume@ubuntu:~/$ ./11-main.py
 -1024
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -524,7 +575,10 @@ Write a function that prints the numbers from 1 to 100 separated by a space.
 
 You don’t need to understand `__import__`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 12-main.py
 #!/usr/bin/env python3
 fizzbuzz = __import__('12-fizzbuzz').fizzbuzz
@@ -536,6 +590,8 @@ guillaume@ubuntu:~/$ ./12-main.py | cat -e
 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 Buzz Fizz 97 98 Fizz Buzz $
 guillaume@ubuntu:~/$
 ```
+</details>
+
 
 Repo:
 
