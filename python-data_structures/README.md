@@ -110,7 +110,10 @@ Write a function that prints all integers of a list.
 * You are not allowed to cast integers into strings
 * You have to use `str.format()` to print integers
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 0-main.py
 #!/usr/bin/python3
 print_list_integer = __import__('0-print_list_integer').print_list_integer
@@ -126,6 +129,8 @@ guillaume@ubuntu:~/$ ./0-main.py
 5
 guillaume@ubuntu:~/$
 ```
+</details>
+
 
 Repo:
 
@@ -145,7 +150,10 @@ If `idx` is out of range (> of number of element in `my_list`), the function sho
 You are not allowed to import any module
 You are not allowed to use `try/except`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 1-main.py
 #!/usr/bin/python3
 element_at = __import__('1-element_at').element_at
@@ -158,6 +166,8 @@ guillaume@ubuntu:~/$ ./1-main.py
 Element at index 3 is 4
 guillaume@ubuntu:~/$
 ```
+</details>
+
 
 Repo:
 
@@ -177,7 +187,10 @@ Write a function that replaces an element of a list at a specific position.
 * You are not allowed to import any module
 * You are not allowed to use `try/except`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 2-main.py
 #!/usr/bin/python3
 replace_in_list = __import__('2-replace_in_list').replace_in_list
@@ -195,6 +208,8 @@ guillaume@ubuntu:~/$ ./2-main.py
 [1, 2, 3, 9, 5]
 guillaume@ubuntu:~/$
 ```
+</details>
+
 Repo:
 
 * GitHub repository: holbertonschool-higher_level_programming
@@ -214,7 +229,10 @@ Write a function that prints all integers of a list, in reverse order.
 * You are not allowed to cast integers into strings
 * You have to use `str.format()` to print integers
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
 print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
@@ -230,6 +248,8 @@ guillaume@ubuntu:~/$ ./3-main.py
 1
 guillaume@ubuntu:~/$
 ```
+</details>
+
 Repo:
 
 * GitHub repository: holbertonschool-higher_level_programming
@@ -242,12 +262,16 @@ Repo:
 
 Write a function that replaces an element in a list at a specific position without modifying the original list.
 
-Prototype: `def new_in_list(my_list, idx, element):`
-If `idx` is negative, the function should return a copy of the original `list`
-If `idx` is out of range (> of number of element in `y_list`), the function should return a copy of the original `list`
-You are not allowed to import any module
-You are not allowed to use `try/except`
-```bash
+* Prototype: `def new_in_list(my_list, idx, element):`
+* If `idx` is negative, the function should return a copy of the original `list`
+* If `idx` is out of range (> of number of element in `y_list`), the function should return a copy of the original `list`
+* You are not allowed to import any module
+* You are not allowed to use `try/except`
+
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 4-main.py
 #!/usr/bin/python3
 new_in_list = __import__('4-new_in_list').new_in_list
@@ -265,6 +289,8 @@ guillaume@ubuntu:~/$ ./4-main.py
 [1, 2, 3, 4, 5]
 guillaume@ubuntu:~/$
 ```
+</details>
+
 Repo:
 
 * GitHub repository: holbertonschool-higher_level_programming
@@ -282,7 +308,10 @@ Write a function that removes all characters `c` and `C` from a string.
 * You are not allowed to import any module
 * You are not allowed to use `str.replace()`
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
 no_c = __import__('5-no_c').no_c
@@ -297,6 +326,7 @@ hiago
  is fun!
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -317,7 +347,10 @@ Write a function that prints a matrix of integers.
 * You are not allowed to cast integers into strings
 * You have to use `str.format()` to print integers
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 6-main.py
 #!/usr/bin/python3
 print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
@@ -340,6 +373,7 @@ guillaume@ubuntu:~/$ ./6-main.py | cat -e
 $
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -362,7 +396,10 @@ Write a function that adds 2 tuples.
 * If a tuple is smaller than 2, use the value `0` for each missing integer
 * If a tuple is bigger than 2, use only the first 2 integers
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 7-main.py
 #!/usr/bin/python3
 add_tuple = __import__('7-add_tuple').add_tuple
@@ -381,6 +418,7 @@ guillaume@ubuntu:~/$ ./7-main.py
 (1, 89)
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -398,7 +436,10 @@ Write a function that returns a tuple with the length of a string and its first 
 * If the sentence is empty, the first character should be equal to `None`
 * You are not allowed to import any module
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 8-main.py
 #!/usr/bin/python3
 multiple_returns = __import__('8-multiple_returns').multiple_returns
@@ -411,6 +452,7 @@ guillaume@ubuntu:~/$ ./8-main.py
 Length: 22 - First character: A
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -430,7 +472,10 @@ Write a function that finds the biggest integer of a list.
 * You are not allowed to import any module
 * You are not allowed to use the builtin max()
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 9-main.py
 #!/usr/bin/python3
 max_integer = __import__('9-max_integer').max_integer
@@ -443,6 +488,7 @@ guillaume@ubuntu:~/$ ./9-main.py
 Max: 90
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -461,7 +507,10 @@ Write a function that finds all multiples of 2 in a list.
 * The new list should have the same size as the original list
 * You are not allowed to import any module
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 10-main.py
 #!/usr/bin/python3
 divisible_by_2 = __import__('10-divisible_by_2').divisible_by_2
@@ -484,6 +533,7 @@ guillaume@ubuntu:~/$ ./10-main.py
 6 is divisible by 2
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -502,7 +552,10 @@ Write a function that deletes the item at a specific position in a list.
 * You are not allowed to use `pop()`
 * You are not allowed to import any module
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/python3
 delete_at = __import__('11-delete_at').delete_at
@@ -518,6 +571,7 @@ guillaume@ubuntu:~/$ ./11-main.py
 [1, 2, 3, 5]
 guillaume@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -535,13 +589,17 @@ Complete the source code in order to switch value of `a` and `b`
 * Your code should be inserted where the comment is (line 4)
 * Your program should be exactly 5 lines long
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/py/$ ./12-switch.py
 a=10 - b=89
 guillaume@ubuntu:~/py/$ wc -l 12-switch.py
 5 12-switch.py
 guillaume@ubuntu:~/py/$
 ```
+</details>
 
 Repo:
 
