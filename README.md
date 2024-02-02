@@ -38,12 +38,12 @@ Due to its user-friendly features and versatility, Python is widely adopted by b
 
 ## ➤ Projects:
 
-[Python - Hello, World](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world)
-[Python - if/else, Loops, Functions](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions)
-[Python - Import & Modules](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules)
-[Python - Data Structures: Lists, Tuples](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-more_data_structures)
-[Python - More Data Structures: Set, Dictionary](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-more_data_structures)
-[Python - Exceptions](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-exceptions)
+* [Python - Hello, World](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-hello_world)
+* [Python - if/else, Loops, Functions](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions)
+* [Python - Import & Modules](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-import_modules)
+* [Python - Data Structures: Lists, Tuples](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-more_data_structures)
+* [Python - More Data Structures: Set, Dictionary](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-more_data_structures)
+* [Python - Exceptions](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-exceptions)
 
 ----------
 
