@@ -146,9 +146,9 @@ Write a Python script that prints exactly "Programming is like building a multil
 
 ```python
 
-guillaume@ubuntu:~/py/$ ./2-print.py 
+amandine@ubuntu:~/py/$ ./2-print.py 
 "Programming is like building a multilingual puzzle
-guillaume@ubuntu:~/py/$
+amandine@ubuntu:~/py/$
 ```
 </details>
 
@@ -176,9 +176,9 @@ Complete this source code in order to print the integer stored in the variable n
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/py/0x00$ ./3-print_number.py
+amandine@ubuntu:~/py/0x00$ ./3-print_number.py
 98 Battery street
-guillaume@ubuntu:~/py/0x00$
+amandine@ubuntu:~/py/0x00$
 ```
 </details>
 
@@ -205,9 +205,9 @@ Complete the source code in order to print the float stored in the variable `num
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/py/0x00$ ./4-print_float.py
+amandine@ubuntu:~/py/0x00$ ./4-print_float.py
 Float: 3.14
-guillaume@ubuntu:~/py/0x00$
+amandine@ubuntu:~/py/0x00$
 ```
 </details>
 
@@ -236,10 +236,10 @@ Complete this source code in order to print 3 times a string stored in the varia
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/py/$ ./5-print_string.py 
+amandine@ubuntu:~/py/$ ./5-print_string.py 
 Holberton SchoolHolberton SchoolHolberton School
 Holberton
-guillaume@ubuntu:~/py/$
+amandine@ubuntu:~/py/$
 ```
 </details>
 
@@ -264,11 +264,11 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/6-conca
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/py/$ ./6-concat.py
+amandine@ubuntu:~/py/$ ./6-concat.py
 Welcome to Holberton School!
-guillaume@ubuntu:~/py/$ wc -l 6-concat.py
+amandine@ubuntu:~/py/$ wc -l 6-concat.py
 5 6-concat.py
-guillaume@ubuntu:~/py/$
+amandine@ubuntu:~/py/$
 ```
 </details>
 
@@ -295,13 +295,13 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/7-edges
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/py/$ ./7-edges.py
+amandine@ubuntu:~/py/$ ./7-edges.py
 First 3 letters: Hol
 Last 2 letters: on
 Middle word: olberto
-guillaume@ubuntu:~/py/$ wc -l 7-edges.py
+amandine@ubuntu:~/py/$ wc -l 7-edges.py
 8 7-edges.py
-guillaume@ubuntu:~/py/$
+amandine@ubuntu:~/py/$
 ```
 </details>
 
@@ -327,11 +327,11 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/8-conca
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/py/$ ./8-concat_edges.py
+amandine@ubuntu:~/py/$ ./8-concat_edges.py
 object-oriented programming with Python
-guillaume@ubuntu:~/py/$ wc -l 8-concat_edges.py
+amandine@ubuntu:~/py/$ wc -l 8-concat_edges.py
 5 8-concat_edges.py
-guillaume@ubuntu:~/py/$
+amandine@ubuntu:~/py/$
 ```
 </details>
 
@@ -353,7 +353,7 @@ Write a Python script that prints “The Zen of Python”, by TimPeters, followe
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/py/$ ./9-easter_egg.py
+amandine@ubuntu:~/py/$ ./9-easter_egg.py
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -375,7 +375,7 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-guillaume@ubuntu:~/py/$
+amandine@ubuntu:~/py/$
 ```
 </details>
 
