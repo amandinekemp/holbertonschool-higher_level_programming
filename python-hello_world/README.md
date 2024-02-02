@@ -140,11 +140,17 @@ The this in Python module contains the "Zen of Python", a series of language des
 Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
 * Use the function print
-```bash
+
+<details>
+<summary>Tests</summary>
+
+```python
+
 guillaume@ubuntu:~/py/$ ./2-print.py 
 "Programming is like building a multilingual puzzle
 guillaume@ubuntu:~/py/$
 ```
+</details>
 
 Repo:
 
@@ -166,11 +172,15 @@ Complete this source code in order to print the integer stored in the variable n
 * Your code must be 3 lines long
 * You have to use f-strings tips
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/py/0x00$ ./3-print_number.py
 98 Battery street
 guillaume@ubuntu:~/py/0x00$
 ```
+</details>
 
 Repo:
 
@@ -191,11 +201,16 @@ Complete the source code in order to print the float stored in the variable `num
 * You are not allowed to cast `number` to string
 * You have to use f-strings
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/py/0x00$ ./4-print_float.py
 Float: 3.14
 guillaume@ubuntu:~/py/0x00$
 ```
+</details>
+
 Repo:
 
 * GitHub repository: holbertonschool-higher_level_programming
@@ -217,12 +232,16 @@ Complete this source code in order to print 3 times a string stored in the varia
 * You are not allowed to use any loops or conditional statement
 * Your program should be maximum 5 lines long
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/py/$ ./5-print_string.py 
 Holberton SchoolHolberton SchoolHolberton School
 Holberton
 guillaume@ubuntu:~/py/$
 ```
+</details>
 
 Repo:
 
@@ -241,13 +260,17 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/6-conca
 * You have to use the variables `str1` and `str2` in your new line of code
 * Your program should be exactly 5 lines long
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/py/$ ./6-concat.py
 Welcome to Holberton School!
 guillaume@ubuntu:~/py/$ wc -l 6-concat.py
 5 6-concat.py
 guillaume@ubuntu:~/py/$
 ```
+</details>
 
 Repo:
 
@@ -268,7 +291,10 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/7-edges
 * `word_last_2` should contain the last 2 letters of the variable `word`
 * `middle_word` should contain the value of the variable `word` without the first and last letters
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/py/$ ./7-edges.py
 First 3 letters: Hol
 Last 2 letters: on
@@ -277,6 +303,7 @@ guillaume@ubuntu:~/py/$ wc -l 7-edges.py
 8 7-edges.py
 guillaume@ubuntu:~/py/$
 ```
+</details>
 
 Repo:
 
@@ -296,13 +323,17 @@ Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/8-conca
 * You are not allowed to create new variables
 * You are not allowed to use string literals
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/py/$ ./8-concat_edges.py
 object-oriented programming with Python
 guillaume@ubuntu:~/py/$ wc -l 8-concat_edges.py
 5 8-concat_edges.py
 guillaume@ubuntu:~/py/$
 ```
+</details>
 
 Repo:
 
@@ -318,7 +349,10 @@ Write a Python script that prints “The Zen of Python”, by TimPeters, followe
 
 * Your script should be maximum 98 characters long (please check with `wc -m 9-easter_egg.py`)
 
-```bash
+<details>
+<summary>Tests</summary>
+
+```python
 guillaume@ubuntu:~/py/$ ./9-easter_egg.py
 The Zen of Python, by Tim Peters
 
@@ -343,6 +377,7 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 guillaume@ubuntu:~/py/$
 ```
+</details>
 
 Repo:
 
