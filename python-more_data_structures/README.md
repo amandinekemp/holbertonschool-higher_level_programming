@@ -113,7 +113,7 @@ Write a function that computes the square value of all integers of a matrix.
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 0-main.py
 #!/usr/bin/python3
 square_matrix_simple = __import__('0-square_matrix_simple').square_matrix_simple
@@ -157,7 +157,7 @@ Write a function that replaces all occurrences of an element by another in a new
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 1-main.py
 #!/usr/bin/python3
 search_replace = __import__('1-search_replace').search_replace
@@ -194,7 +194,7 @@ Write a function that adds all unique integers in a list (only once for each int
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 2-main.py
 #!/usr/bin/python3
 uniq_add = __import__('2-uniq_add').uniq_add
@@ -228,7 +228,7 @@ Write a function that returns a set of common elements in two sets.
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
 common_elements = __import__('3-common_elements').common_elements
@@ -263,7 +263,7 @@ Write a function that returns a set of all elements present in only one set.
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 4-main.py
 #!/usr/bin/python3
 only_diff_elements = __import__('4-only_diff_elements').only_diff_elements
@@ -298,7 +298,7 @@ Write a function that returns the number of keys in a dictionary.
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
 number_keys = __import__('5-number_keys').number_keys
@@ -336,7 +336,7 @@ Write a function that prints a dictionary by ordered keys.
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 6-main.py
 #!/usr/bin/python3
 print_sorted_dictionary = __import__('6-print_sorted_dictionary').print_sorted_dictionary
@@ -376,7 +376,7 @@ Write a function that replaces or adds key/value in a dictionary.
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 7-main.py
 #!/usr/bin/python3
 update_dictionary = __import__('7-update_dictionary').update_dictionary
@@ -440,7 +440,7 @@ Write a function that deletes a key in a dictionary.
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 8-main.py
 #!/usr/bin/python3
 simple_delete = __import__('8-simple_delete').simple_delete
@@ -502,7 +502,7 @@ Write a function that returns a new dictionary with all values multiplied by 2
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 9-main.py
 #!/usr/bin/python3
 multiply_by_2 = __import__('9-multiply_by_2').multiply_by_2
@@ -553,7 +553,7 @@ Write a function that returns a key with the biggest integer value.
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 10-main.py
 #!/usr/bin/python3
 best_score = __import__('10-best_score').best_score
@@ -597,7 +597,7 @@ Write a function that returns a list with all values multiplied by a number with
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/python3
 multiply_list_map = __import__('11-multiply_list_map').multiply_list_map
@@ -639,7 +639,7 @@ Create a function `def roman_to_int(roman_string):` that converts a [Roman numer
 <details>
 <summary>Tests</summary>
 
-```bash
+```python
 amandine@ubuntu:~/$ cat 12-main.py
 #!/usr/bin/python3
 """ Roman to Integer test file
