@@ -367,8 +367,10 @@ Repo:
 * GitHub repository: holbertonschool-higher_level_programming
 * Directory: python-exceptions
 * File: 4-list_division.py
+
+----------
   
-5. Raise exception
+### 5. Raise exception
 
 Write a function that raises a type exception.
 
