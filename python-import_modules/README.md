@@ -83,8 +83,11 @@ Write a program that imports the function `def add(a, b):` from the file `add_0.
 * You are not allowed to use `*` for importing or `__import__`
 * Your code should not be executed when imported - by using `__import__`, like the example below
 
-```bash
-guillaume@ubuntu:~/$ cat add_0.py
+<details>
+<summary>Tests</summary>
+
+```python
+amandine@ubuntu:~/$ cat add_0.py
 #!/usr/bin/python3
 def add(a, b):
     """My addition function
@@ -98,13 +101,14 @@ def add(a, b):
     """
     return (a + b)
 
-guillaume@ubuntu:~/$ ./0-add.py
+amandine@ubuntu:~/$ ./0-add.py
 1 + 2 = 3
-guillaume@ubuntu:~/$ cat 0-import_add.py
+amandine@ubuntu:~/$ cat 0-import_add.py
 __import__("0-add")
-guillaume@ubuntu:~/$ python3 0-import_add.py 
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$ python3 0-import_add.py 
+amandine@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -127,8 +131,11 @@ Write a program that imports functions from the file `calculator_1.py`, does som
 * You are not allowed to use * for importing or `__import__`
 * Your code should not be executed when imported
 
-```bash
-guillaume@ubuntu:~/$ cat calculator_1.py
+<details>
+<summary>Tests</summary>
+
+```python
+amandine@ubuntu:~/$ cat calculator_1.py
 #!/usr/bin/python3
 def add(a, b):
     """My addition function
@@ -181,13 +188,14 @@ def div(a, b):
     """
     return int(a / b)
 
-guillaume@ubuntu:~/$ ./1-calculation.py
+amandine@ubuntu:~/$ ./1-calculation.py
 10 + 5 = 15
 10 - 5 = 5
 10 * 5 = 50
 10 / 5 = 2
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -209,13 +217,16 @@ Write a program that prints the number of and the list of its arguments.
 * The number of elements of `argv` can be retrieved by using: `len(argv)`
 * You do not have to fully understand lists yet, but imagine that `argv` can be used just like a C array: you can use an index to walk through it. There are other ways (which will be preferred for future project tasks), if you know them you can use them.
 
-```bash
-guillaume@ubuntu:~/$ ./2-args.py 
+<details>
+<summary>Tests</summary>
+
+```python
+amandine@ubuntu:~/$ ./2-args.py 
 0 arguments.
-guillaume@ubuntu:~/$ ./2-args.py Hello
+amandine@ubuntu:~/$ ./2-args.py Hello
 1 argument:
 1: Hello
-guillaume@ubuntu:~/$ ./2-args.py Hello Welcome To The Best School
+amandine@ubuntu:~/$ ./2-args.py Hello Welcome To The Best School
 6 arguments:
 1: Hello
 2: Welcome
@@ -223,8 +234,9 @@ guillaume@ubuntu:~/$ ./2-args.py Hello Welcome To The Best School
 4: The
 5: Best
 6: School
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -240,20 +252,24 @@ Write a program that prints the result of the addition of all arguments
 * You can cast arguments into integers by using `int()` (you can assume that all arguments can be casted into integers)
 * Your code should not be executed when imported
 
-```bash
-guillaume@ubuntu:~/$ ./3-infinite_add.py
+<details>
+<summary>Tests</summary>
+
+```python
+amandine@ubuntu:~/$ ./3-infinite_add.py
 0
-guillaume@ubuntu:~/$ ./3-infinite_add.py 79 10
+amandine@ubuntu:~/$ ./3-infinite_add.py 79 10
 89
-guillaume@ubuntu:~/$ ./3-infinite_add.py 79 10 -40 -300 89 
+amandine@ubuntu:~/$ ./3-infinite_add.py 79 10 -40 -300 89 
 -162
-guillaume@ubuntu:~/$ 
+amandine@ubuntu:~/$ 
 Last but not least, your program should also handle big numbers. And the good news is: if your program works for the above example, it will work for the following example:
 
-guillaume@ubuntu:~/$ ./3-infinite_add.py 1111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999990000000000000000000 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334567788888899999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+amandine@ubuntu:~/$ ./3-infinite_add.py 1111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999990000000000000000000 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334567788888899999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334568900000011111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999989999999999999999999
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -270,14 +286,18 @@ Write a program that prints all the names defined by the compiled module **hidde
 * Your code should not be executed when imported
 * Make sure you are running your code in Python3.8.x (`hidden_4.pyc` has been compiled with this version)
 
-```bash
-guillaume@ubuntu:~/$ curl -Lso "hidden_4.pyc" "https://github.com/hs-hq/0x02.py/raw/main/hidden_4.pyc"
-guillaume@ubuntu:~/$ ./4-hidden_discovery.py | sort
+<details>
+<summary>Tests</summary>
+
+```python
+amandine@ubuntu:~/$ curl -Lso "hidden_4.pyc" "https://github.com/hs-hq/0x02.py/raw/main/hidden_4.pyc"
+amandine@ubuntu:~/$ ./4-hidden_discovery.py | sort
 my_secret_santa
 print_hidden
 print_school
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
@@ -292,17 +312,21 @@ Write a program that imports the variable `a` from the file `variable_load_5.py`
 You are not allowed to use `*` for importing or `__import__`
 Your code should not be executed when imported
 
-```bash
-guillaume@ubuntu:~/$ cat variable_load_5.py
+<details>
+<summary>Tests</summary>
+
+```python
+amandine@ubuntu:~/$ cat variable_load_5.py
 #!/usr/bin/python3
 a = 98
 """Simple variable
 """
 
-guillaume@ubuntu:~/$ ./5-variable_load.py
+amandine@ubuntu:~/$ ./5-variable_load.py
 98
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
+</details>
 
 Repo:
 
