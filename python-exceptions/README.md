@@ -358,20 +358,27 @@ division by 0
 wrong type
 out of range
 [5.0, 0, 0, 2.0, 0]
-amandine@ubuntu:~/$ 
+amandine@ubuntu:~/$
+```
+</details>
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: python-exceptions
-File: 4-list_division.py
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: python-exceptions
+* File: 4-list_division.py
   
-0/16 pts
 5. Raise exception
-mandatory
+
 Write a function that raises a type exception.
 
-Prototype: def raise_exception():
-You are not allowed to import any module
+* Prototype: `def raise_exception():`
+* You are not allowed to import any module
+
+<details>
+<summary>Tests</summary>
+
+```python
 amandine@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
 raise_exception = __import__('5-raise_exception').raise_exception
