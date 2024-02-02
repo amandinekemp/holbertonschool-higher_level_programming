@@ -114,20 +114,20 @@ Write a function that prints all integers of a list.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 0-main.py
+amandine@ubuntu:~/$ cat 0-main.py
 #!/usr/bin/python3
 print_list_integer = __import__('0-print_list_integer').print_list_integer
 
 my_list = [1, 2, 3, 4, 5]
 print_list_integer(my_list)
 
-guillaume@ubuntu:~/$ ./0-main.py
+amandine@ubuntu:~/$ ./0-main.py
 1
 2
 3
 4
 5
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -154,7 +154,7 @@ You are not allowed to use `try/except`
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 1-main.py
+amandine@ubuntu:~/$ cat 1-main.py
 #!/usr/bin/python3
 element_at = __import__('1-element_at').element_at
 
@@ -162,9 +162,9 @@ my_list = [1, 2, 3, 4, 5]
 idx = 3
 print("Element at index {:d} is {}".format(idx, element_at(my_list, idx)))
 
-guillaume@ubuntu:~/$ ./1-main.py
+amandine@ubuntu:~/$ ./1-main.py
 Element at index 3 is 4
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -191,7 +191,7 @@ Write a function that replaces an element of a list at a specific position.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 2-main.py
+amandine@ubuntu:~/$ cat 2-main.py
 #!/usr/bin/python3
 replace_in_list = __import__('2-replace_in_list').replace_in_list
 
@@ -203,10 +203,10 @@ new_list = replace_in_list(my_list, idx, new_element)
 print(new_list)
 print(my_list)
 
-guillaume@ubuntu:~/$ ./2-main.py
+amandine@ubuntu:~/$ ./2-main.py
 [1, 2, 3, 9, 5]
 [1, 2, 3, 9, 5]
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -233,20 +233,20 @@ Write a function that prints all integers of a list, in reverse order.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 3-main.py
+amandine@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
 print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
 
 my_list = [1, 2, 3, 4, 5]
 print_reversed_list_integer(my_list)
 
-guillaume@ubuntu:~/$ ./3-main.py
+amandine@ubuntu:~/$ ./3-main.py
 5
 4
 3
 2
 1
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -272,7 +272,7 @@ Write a function that replaces an element in a list at a specific position witho
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 4-main.py
+amandine@ubuntu:~/$ cat 4-main.py
 #!/usr/bin/python3
 new_in_list = __import__('4-new_in_list').new_in_list
 
@@ -284,10 +284,10 @@ new_list = new_in_list(my_list, idx, new_element)
 print(new_list)
 print(my_list)
 
-guillaume@ubuntu:~/$ ./4-main.py
+amandine@ubuntu:~/$ ./4-main.py
 [1, 2, 3, 9, 5]
 [1, 2, 3, 4, 5]
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -312,7 +312,7 @@ Write a function that removes all characters `c` and `C` from a string.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 5-main.py
+amandine@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
 no_c = __import__('5-no_c').no_c
 
@@ -320,11 +320,11 @@ print(no_c("Best School"))
 print(no_c("Chicago"))
 print(no_c("C is fun!"))
 
-guillaume@ubuntu:~/$ ./5-main.py
+amandine@ubuntu:~/$ ./5-main.py
 Best Shool
 hiago
  is fun!
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -351,7 +351,7 @@ Write a function that prints a matrix of integers.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 6-main.py
+amandine@ubuntu:~/$ cat 6-main.py
 #!/usr/bin/python3
 print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
 
@@ -365,13 +365,13 @@ print_matrix_integer(matrix)
 print("--")
 print_matrix_integer()
 
-guillaume@ubuntu:~/$ ./6-main.py | cat -e
+amandine@ubuntu:~/$ ./6-main.py | cat -e
 1 2 3$
 4 5 6$
 7 8 9$
 --$
 $
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -400,7 +400,7 @@ Write a function that adds 2 tuples.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 7-main.py
+amandine@ubuntu:~/$ cat 7-main.py
 #!/usr/bin/python3
 add_tuple = __import__('7-add_tuple').add_tuple
 
@@ -412,11 +412,11 @@ print(new_tuple)
 print(add_tuple(tuple_a, (1, )))
 print(add_tuple(tuple_a, ()))
 
-guillaume@ubuntu:~/$ ./7-main.py
+amandine@ubuntu:~/$ ./7-main.py
 (89, 100)
 (2, 89)
 (1, 89)
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -440,7 +440,7 @@ Write a function that returns a tuple with the length of a string and its first 
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 8-main.py
+amandine@ubuntu:~/$ cat 8-main.py
 #!/usr/bin/python3
 multiple_returns = __import__('8-multiple_returns').multiple_returns
 
@@ -448,9 +448,9 @@ sentence = "At school, I learnt C!"
 length, first = multiple_returns(sentence)
 print("Length: {:d} - First character: {}".format(length, first))
 
-guillaume@ubuntu:~/$ ./8-main.py
+amandine@ubuntu:~/$ ./8-main.py
 Length: 22 - First character: A
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -476,7 +476,7 @@ Write a function that finds the biggest integer of a list.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 9-main.py
+amandine@ubuntu:~/$ cat 9-main.py
 #!/usr/bin/python3
 max_integer = __import__('9-max_integer').max_integer
 
@@ -484,9 +484,9 @@ my_list = [1, 90, 2, 13, 34, 5, -13, 3]
 max_value = max_integer(my_list)
 print("Max: {}".format(max_value))
 
-guillaume@ubuntu:~/$ ./9-main.py
+amandine@ubuntu:~/$ ./9-main.py
 Max: 90
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -511,7 +511,7 @@ Write a function that finds all multiples of 2 in a list.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 10-main.py
+amandine@ubuntu:~/$ cat 10-main.py
 #!/usr/bin/python3
 divisible_by_2 = __import__('10-divisible_by_2').divisible_by_2
 
@@ -523,7 +523,7 @@ while i < len(list_result):
     print("{:d} {:s} divisible by 2".format(my_list[i], "is" if list_result[i] else "is not"))
     i += 1
 
-guillaume@ubuntu:~/$ ./10-main.py
+amandine@ubuntu:~/$ ./10-main.py
 0 is divisible by 2
 1 is not divisible by 2
 2 is divisible by 2
@@ -531,7 +531,7 @@ guillaume@ubuntu:~/$ ./10-main.py
 4 is divisible by 2
 5 is not divisible by 2
 6 is divisible by 2
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -556,7 +556,7 @@ Write a function that deletes the item at a specific position in a list.
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/$ cat 11-main.py
+amandine@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/python3
 delete_at = __import__('11-delete_at').delete_at
 
@@ -566,10 +566,10 @@ new_list = delete_at(my_list, idx)
 print(new_list)
 print(my_list)
 
-guillaume@ubuntu:~/$ ./11-main.py
+amandine@ubuntu:~/$ ./11-main.py
 [1, 2, 3, 5]
 [1, 2, 3, 5]
-guillaume@ubuntu:~/$
+amandine@ubuntu:~/$
 ```
 </details>
 
@@ -593,11 +593,11 @@ Complete the source code in order to switch value of `a` and `b`
 <summary>Tests</summary>
 
 ```python
-guillaume@ubuntu:~/py/$ ./12-switch.py
+amandine@ubuntu:~/py/$ ./12-switch.py
 a=10 - b=89
-guillaume@ubuntu:~/py/$ wc -l 12-switch.py
+amandine@ubuntu:~/py/$ wc -l 12-switch.py
 5 12-switch.py
-guillaume@ubuntu:~/py/$
+amandine@ubuntu:~/py/$
 ```
 </details>
 
