@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module defining a Square class with a size attribute"""
 
+
 class Square:
     """Square class representing a geometric square with a size attribute"""
 
@@ -8,10 +9,10 @@ class Square:
         """Initializes a square instance with an optional size
 
         Args:
-        	size (int): Size of the square. Defaults to 0
+            size (int): Size of the square. Defaults to 0
         
         Raises:
-        	TypeError: If size is not an integer
+            TypeError: If size is not an integer
         	ValueError: If size is less than 0
         """
         if type(size) != int:
