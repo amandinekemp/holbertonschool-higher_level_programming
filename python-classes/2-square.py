@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module defining a Square class with a size attribute"""
 
+
 class Square:
     """Square class that represents a square with a size attribute"""
 
