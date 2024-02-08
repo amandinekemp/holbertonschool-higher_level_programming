@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Module defining a Square class with a size attribute"""
 
 
