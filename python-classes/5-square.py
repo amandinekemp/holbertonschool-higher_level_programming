@@ -1,13 +1,14 @@
 #!/usr/bin/python3
+
 """Module defining a Square class"""
+
 
 class Square:
     """Square class representing a geometric square with a size attribute"""
-
     def __init__(self, size=0):
         """
         Initializes a square instance with an optional size
-        
+
         Args:
             size (int, optional): The size of the square. Default is 0
         """
@@ -17,7 +18,7 @@ class Square:
     def size(self):
         """
         Getter method for the size attribute
-        
+
         Return:
             int: The size of the square
         """
