@@ -11,12 +11,12 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ General]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-test_driven_development/tests#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-test_driven_development/tests#-resources)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-test_driven_development/tests#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-test_driven_development/tests#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-test_driven_development/tests#-tasks)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-test_driven_development/tests#-author)
 
 ----------
 
