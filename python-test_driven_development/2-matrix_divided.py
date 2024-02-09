@@ -9,7 +9,7 @@ def matrix_divided(matrix, div):
 
     Parameters:
         matrix (list of lists of int/float): The matrix to be divided.
-        div (int/float): The number by which to divide all elements of the matrix.
+        div (int/float): number by which to divide all elements of the matrix
 
     Returns:
         list of lists of float: A new matrix with all elements divided by div,
