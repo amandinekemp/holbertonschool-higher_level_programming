@@ -1,53 +1,70 @@
-The ``0-add_integer'' module
+# doctest 0-add_integer.txt
 ============================
 
 Using ``add_integer``
 ---------------------
 
+File: ``0-add_integer.py``
+Import the function:
+
 	>>> add_integer = __import__('0-add_integer').add_integer
 
+
+**Tests to realize:**
+
 Regular integers:
-	>>> add_integer(1, 2)
-	3
+	>>> add_integer(5, 6)
+	11
 
 Negative number:
-	>>> add_integer(100, -2)
-	98
+	>>> add_integer(-3, 10)
+	7
 
-Single argument:
-	>>> add_integer(2)
-	100
+Positive with negative:
+	 >>> add_integer(1, -3)
+	 -2
 
-Float:
-	>>> add_integer(100.3, -2)
-	98
+Both negative:
+    >>> print(add_integer(-8, -3))
+    -11
 
-Passing string to b:
-	>>> add_integer(4, "School")
-	Traceback (most recent call last):
-	TypeError: b must be an integer
+Float with int:
+	 >>> add_integer(2.1, 4)
+	 6
 
-Passing string to a:
-	>>> add_integer(None)
-	Traceback (most recent call last):
-	TypeError: a must be an integer
+Int with float:
+	 >>> add_integer(5, 7.8)
+	 12
 
-Name error:
-	>>> add_integer(1, h)
-	Traceback (most recent call last):
-	NameError: name 'h' is not defined
+Both float:
+    >>> add_integer(10.55, 58.2)
+    68
 
-No parameters:
-	>>> add_integer()
-	Traceback (most recent call last):
-	TypeError: add_integer() missing 1 required positional argument: 'a'
 
-Adding infinity:
-	>>> add_integer(1, float("inf"))
-	Traceback (most recent call last):
-    	OverflowError: cannot convert float infinity to integer
 
-Adding NaN:
-	>>> add_integer(1, float("nan"))
-	Traceback (most recent call last):
-    	ValueError: cannot convert float NaN to integer
+
+
+
+Checking number with non-number:
+	 >>> add_integer(1, "4")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: b must be an integer
+
+Non arguments:
+	 >>> add_integer()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: add_integer() missing 1 required positional argument: 'a'
+
+String to a:
+    >>> print(add_integer(2, "Hello"))
+    Traceback (most recent call last):
+	...
+    TypeError: b must be an integer
+
+String to a and b:
+    >>> add_integer("Hello", "World")
+    Traceback (most recent call last):
+	...
+    TypeError: a must be an integer
