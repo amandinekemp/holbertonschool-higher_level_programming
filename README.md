@@ -44,6 +44,9 @@ Due to its user-friendly features and versatility, Python is widely adopted by b
 * [Python - Data Structures: Lists, Tuples](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-more_data_structures)
 * [Python - More Data Structures: Set, Dictionary](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-more_data_structures)
 * [Python - Exceptions](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-exceptions)
+* [Python - Classes and Objects](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-classes)
+* [Python - Test-driven development](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-test_driven_development)
+* [Python - More Classes and Objects](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-more_classes)
 
 ----------
 
