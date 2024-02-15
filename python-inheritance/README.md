@@ -10,18 +10,34 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ General]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-inheritance#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-inheritance#-resources)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-inheritance#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-inheritance#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-inheritance#-tasks)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-inheritance#-author)
 
 ----------
 
 ## ➤ Description:
 
+Inheritance in Python is a mechanism that allows a class (called a subclass or derived class) to inherit attributes and methods from another class (called a superclass, base class, or parent class). This creates an "is-a" relationship between the classes, where the subclass is a specialized version of the superclass.
 
+In inheritance, the subclass can access the attributes and methods of the superclass and use them as if they were defined locally. It can also add new attributes and methods, redefine existing methods (i.e., provide a different implementation from those of the superclass), or even simply inherit the behavior of the superclass without making any modifications.
+
+Inheritance enables efficient code reuse, thus promoting modularity, maintainability, and extensibility of programs. It also allows for class hierarchies, making it easier to understand and manage complex programs.
+
+In Python, inheritance is declared by specifying the superclass in parentheses after the subclass name when defining it. For example:
+
+```python
+class SuperClass:
+    pass
+
+class SubClass(SuperClass):
+    pass
+```
+
+In this example, `SubClass` inherits from `SuperClass`. It can now access the attributes and methods of `SuperClass` and use them as if they were defined locally.
 
 ----------
 
