@@ -29,11 +29,11 @@ class Student:
             if attrs is None:
                 return self.__dict__
             else:
-                dict = {}
-                for key in attrs:
-                    if key in self.__dict__:
-                        dict[key] = self.__dict__[key]
-                return dict
+                my_dict = {}
+                for key, value in self.__dict__.items():
+                    if key in attrs:
+                        my_dict[key] = value
+                return my_dict
 
         def reload_from_json(self, json):
             """Replaces all attributes of the Student instance.
@@ -42,4 +42,4 @@ class Student:
                 json (dict): A dictionary of attributes to replace.
             """
             for key, value in json.items():
-                setattr(self, key, value)
+                self.__dict__[key] = value
