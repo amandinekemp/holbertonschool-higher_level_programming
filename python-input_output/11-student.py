@@ -42,4 +42,4 @@ class Student:
                 json (dict): A dictionary of attributes to replace.
             """
             for key, value in json.items():
-                self.__dict__[key] = value
+                setattr(self, key, value)
