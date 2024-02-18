@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Defines a Student class."""
 
 
@@ -42,4 +43,4 @@ class Student:
                 json (dict): A dictionary of attributes to replace.
             """
             for key, value in json.items():
-                setattr(self, key, value)
+                self.__dict__[key] = value
