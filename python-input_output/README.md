@@ -10,12 +10,12 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ General]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-input_output#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-input_output#-resources)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-input_output#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-input_output#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-input_output#-tasks)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-input_output#-author)
 
 ----------
 
