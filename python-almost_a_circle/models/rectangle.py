@@ -110,3 +110,44 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")1
         else:
             self.__y = value
+
+    def area(self):
+        """Calculates and returns the area of the Rectangle instance."""
+        return self.width * self.height
+    
+    def display(self):
+        """Prints the Rectangle instance to stdout using the '#' character."""
+        for column in range(self.y):
+            print()
+        for row in range(self.height):
+            print(" " * self.x + self.width * "#")
+    
+    def __str__(self):
+        """Returns a string representation of the Rectangle instance."""
+        s_id = self.id
+        s_x = self.x
+        s_y = self.y
+        s_wid = self.__width
+        s_hei = self.__height
+        return f"[Rectangle] ({s_id}) {s_x}/{s_y} - {s_wid}/{s_hei}"
+
+    def update(self, *args, **kwargs):
+        """Assigns an argument to each attribute: id, width, height, x, y."""
+        if args:
+            attributs = ["id", "width", "height", "x", "y"]
+            for index, arg in enumerate(args):
+                if index < len(attributs):
+                    setattr(self, attributs[index], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Rectangle instance."""
+        return {
+            "x": self.x,
+            "width": self.width,
+            "id": self.id,
+            "height": self.height,
+            "y": self.y
+            }
