@@ -1,4 +1,4 @@
-import unittest, json
+import unittest
 from models.base import Base
 """Defines test cases for the Base class."""
 
@@ -6,17 +6,23 @@ from models.base import Base
 class test_base(unittest.TestCase):
     """Tests for the Base class."""
 
-    def test_id_none(self):
+    def test_id_auto(self):
         b = Base()
         self.assertEqual(1, b.id)
+    
+    def test_id_auto_increment(self):
+        b = Base()
+        self.assertEqual(2, b.id)
 
     def test_id(self):
-        b = Base(50)
-        self.assertEqual(50, b.id)
+        b = Base(89)
+        self.assertEqual(89, b.id)
 
-    def test_id_zero(self):
-        b = Base(0)
-        self.assertEqual(0, b.id)
+    def test_to_json_string_None(self):
+        self.assertEqual("[]", Base.to_json_string(None))
+
+
+
 
     def test_id_negative(self):
         b = Base(-20)
@@ -37,7 +43,6 @@ class test_base(unittest.TestCase):
     def test_id_tuple(self):
         b = Base((8,))
         self.assertEqual((8,), b.id)
-
 
 if __name__ == '__main__':
     unittest.main()
