@@ -1,10 +1,9 @@
-"""Defines test cases for the Base class."""
-
 import unittest, json
 from models.base import Base
+"""Defines test cases for the Base class."""
 
 
-class test_Base(unittest.TestCase):
+class test_base(unittest.TestCase):
     """Tests for the Base class."""
 
     def test_id_none(self):
