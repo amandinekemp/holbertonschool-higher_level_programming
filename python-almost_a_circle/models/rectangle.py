@@ -17,10 +17,10 @@ class Rectangle(Base):
             id (int): The id of the rectangle. Defaults to None.
         """
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
     @property
     def width(self):
@@ -115,20 +115,20 @@ class Rectangle(Base):
 
     def area(self):
         """Calculates and returns the area of the Rectangle instance."""
-        return self.width * self.height
+        return self.__width * self.__height
     
     def display(self):
         """Prints the Rectangle instance to stdout using the '#' character."""
-        for column in range(self.y):
+        for column in range(self.__y):
             print()
-        for row in range(self.height):
-            print(" " * self.x + self.width * "#")
+        for row in range(self.__height):
+            print(" " * self.__x + self.__width * "#")
     
     def __str__(self):
         """Returns a string representation of the Rectangle instance."""
         s_id = self.id
-        s_x = self.x
-        s_y = self.y
+        s_x = self.__x
+        s_y = self.__y
         s_wid = self.__width
         s_hei = self.__height
         return f"[Rectangle] ({s_id}) {s_x}/{s_y} - {s_wid}/{s_hei}"
@@ -147,9 +147,9 @@ class Rectangle(Base):
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle instance."""
         return {
-            "x": self.x,
-            "width": self.width,
+            "x": self.__x,
+            "width": self.__width,
             "id": self.id,
-            "height": self.height,
-            "y": self.y
+            "height": self.__height,
+            "y": self.__y
             }
