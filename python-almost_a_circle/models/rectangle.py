@@ -9,12 +9,12 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializes the restangle.
 
-         Args:
-            width (int): The width of the rectangle.
-            height (int): The height of the rectangle.
-            x (int): The x coordinate of the rectangle. Defaults to 0.
-            y (int): The y coordinate of the rectangle. Defaults to 0.
-            id (int): The id of the rectangle. Defaults to None.
+        Args:
+           width (int): The width of the rectangle.
+           height (int): The height of the rectangle.
+           x (int): The x coordinate of the rectangle. Defaults to 0.
+           y (int): The y coordinate of the rectangle. Defaults to 0.
+           id (int): The id of the rectangle. Defaults to None.
         """
         super().__init__(id)
         self.__width = width
@@ -26,7 +26,7 @@ class Rectangle(Base):
     def width(self):
         """Gets the width of the rectangle."""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """Sets the width of the rectangle.
@@ -43,12 +43,12 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
-    
+
     @property
     def height(self):
         """Gets the height of the rectangle."""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """Sets the height of the rectangle.
@@ -66,12 +66,12 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         else:
             self.__height = value
-    
+
     @property
     def x(self):
         """Gets the x coordinate of the rectangle."""
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         """Sets the x coordinate of the rectangle.
@@ -94,7 +94,7 @@ class Rectangle(Base):
     def y(self):
         """Gets the y coordinate of the rectangle."""
         return self.__y
-    
+
     @y.setter
     def y(self, value):
         """Sets the y coordinate of the rectangle.
@@ -116,14 +116,14 @@ class Rectangle(Base):
     def area(self):
         """Calculates and returns the area of the Rectangle instance."""
         return self.__width * self.__height
-    
+
     def display(self):
         """Prints the Rectangle instance to stdout using the '#' character."""
         for column in range(self.__y):
             print()
         for row in range(self.__height):
             print(" " * self.__x + self.__width * "#")
-    
+
     def __str__(self):
         """Returns a string representation of the Rectangle instance."""
         s_id = self.id
@@ -151,5 +151,5 @@ class Rectangle(Base):
             "width": self.__width,
             "id": self.id,
             "height": self.__height,
-            "y": self.__y
-            }
+            "y": self.__y,
+        }
