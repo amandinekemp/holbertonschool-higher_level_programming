@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-
-from models.base import Base
-
 """Rectangle class"""
+from models.base import Base
 
 
 class Rectangle(Base):
     """Defines a Rectangle class."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initializes the restangle.
+        """Initializes the rectangle.
 
         Args:
            width (int): The width of the rectangle.
