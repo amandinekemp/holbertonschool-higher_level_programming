@@ -2,6 +2,8 @@
 
 from models.base import Base
 
+"""Rectangle class"""
+
 
 class Rectangle(Base):
     """Defines a Rectangle class."""

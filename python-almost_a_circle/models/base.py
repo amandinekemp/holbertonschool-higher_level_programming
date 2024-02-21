@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 
-"""Base class tests"""
+"""Base class"""
 
 import json
 
 
 class Base:
-    """"Defines a Base class"""
+    """ "Defines a Base class"""
+
     __nb_objets = 0
 
     def __init__(self, id=None):
-        """ Initializes the Base class
+        """Initializes the Base class
 
         Args:
             id (int): The id of the base. Defaults to None.
