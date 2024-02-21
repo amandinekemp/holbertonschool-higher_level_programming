@@ -38,6 +38,10 @@ class test_base(unittest.TestCase):
         b = Base((8,))
         self.assertEqual((8,), b.id)
 
+    def test_to_json_string_None(self):
+        """Test if to_json_string returns '[]' when passed None."""
+        self.assertEqual(Base.to_json_string(None), '[]')
+
 
 if __name__ == '__main__':
     unittest.main()
