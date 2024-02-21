@@ -4,7 +4,7 @@ import unittest, json
 from models.base import Base
 
 
-class TestBase(unittest.TestCase):
+class test_Base(unittest.TestCase):
     """Tests for the Base class."""
 
     def test_id_none(self):
