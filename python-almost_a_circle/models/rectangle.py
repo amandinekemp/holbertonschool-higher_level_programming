@@ -134,7 +134,12 @@ class Rectangle(Base):
         return f"[Rectangle] ({s_id}) {s_x}/{s_y} - {s_wid}/{s_hei}"
 
     def update(self, *args, **kwargs):
-        """Assigns an argument to each attribute: id, width, height, x, y."""
+        """Assigns an argument to each attribute: id, width, height, x, y.
+
+        Args:
+            args (int): Todo
+            kwargs (int): Todo
+        """
         if args:
             attributs = ["id", "width", "height", "x", "y"]
             for index, arg in enumerate(args):
