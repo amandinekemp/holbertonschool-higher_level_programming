@@ -1,8 +1,3 @@
-#!/usr/bin/python3
-
-"""Unittest for class Rectangle
-"""
-
 import unittest
 import os
 import json
