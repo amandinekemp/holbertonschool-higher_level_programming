@@ -1,5 +1,5 @@
 <p align="center">
-    <img [Python - Almost a circle] src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-masterclass-course%2F&psig=AOvVaw2EGIyTsbSlgf5V2exo5gNU&ust=1708505029922000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMiQ7a_DuYQDFQAAAAAdAAAAABAD">
+    <img [Python - Almost a circle] src="https://website-derricksherrill.s3.amazonaws.com/static/blog/img/AbstractPython.png">
 </p>
 
 ----------
@@ -10,18 +10,18 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ General]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-almost_a_circle#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-almost_a_circle#-resources)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-almost_a_circle#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-almost_a_circle#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-almost_a_circle#-tasks)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-almost_a_circle#-author)
 
 ----------
 
 ## ➤ Description:
 
-
+The "Almost a Circle" Python project comprises three classes: Base, Rectangle and Square. The Base class is the project's main class, managing the id attribute to avoid code duplication. Rectangle inherits from Base and has protected attributes (height, width, x-position and y-position) with getters and setters. It offers methods for calculating area, displaying the rectangle and updating attributes. Square inherits from Rectangle without additional attributes, with a constructor assigning the size value to the height and width. Its str method returns ID, position and size. The project must comply with PEP 8 standards and be unit-tested.
 
 ----------
 
