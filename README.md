@@ -47,6 +47,10 @@ Due to its user-friendly features and versatility, Python is widely adopted by b
 * [Python - Classes and Objects](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-classes)
 * [Python - Test-driven development](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-test_driven_development)
 * [Python - More Classes and Objects](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-more_classes)
+* [Python - Everything Is Object](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-everything_is_object)
+* [Python - Inheritance](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-inheritance)
+* [Python - Input/Output](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-input_output)
+* [Python - Almost a circle](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-almost_a_circle)
 
 ----------
 
