@@ -1,5 +1,5 @@
 <p align="center">
-    <img [SQL - Introduction] src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhy9FPx7zh5ownEMv9nsR30bVGUZMjivRa__7j8mrLLczRrG6Rb7ep1EEk_OeETC1vZKQ&usqp=CAU">
+    <img [SQL - Introduction] src="https://sqldbaschool.com/wp-content/uploads/2015/06/shutterstock_sql.jpg">
 </p>
 
 ----------
