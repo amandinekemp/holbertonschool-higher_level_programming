@@ -6,4 +6,5 @@ CREATE TABLE IF NOT EXISTS cities (
 	name CHAR(50) NOT NULL,
 	state_id INT NOT NULL,
 	PRIMARY KEY (id)
+	FOREIGN KEY (state_id) REFERENCES states (id)
 );
