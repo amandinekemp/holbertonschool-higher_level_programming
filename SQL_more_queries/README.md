@@ -295,7 +295,7 @@ Repo:
 * Directory: SQL_more_queries
 * File: 2-create_read_user.sql
   
-3. Always a name
+### 3. Always a name
 
 Write a script that creates the table force_name on your MySQL server.
 
@@ -400,7 +400,7 @@ Repo:
 * Directory: SQL_more_queries
 * File: 5-unique_id.sql
   
-6. States table
+### 6. States table
 
 Write a script that creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on your MySQL server.
 
@@ -506,7 +506,7 @@ Repo:
 * Directory: SQL_more_queries
 * File: 8-cities_of_california_subquery.sql
   
-9. Cities by States
+### 9. Cities by States
 
 Write a script that lists all cities contained in the database hbtn_0d_usa.
 
