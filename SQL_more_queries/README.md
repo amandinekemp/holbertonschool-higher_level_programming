@@ -1,5 +1,5 @@
 <p align="center">
-    <img [SQL - More queries] src="https://sqldbaschool.com/wp-content/uploads/2015/06/shutterstock_sql.jpg">
+    <img [SQL - More queries] src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230128155315/10-Most-Used-SQL-Queries-For-Developers.png">
 </p>
 
 ----------
@@ -10,12 +10,12 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ General]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/SQL_more_queries#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/SQL_more_queries#-resources)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/SQL_more_queries#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/SQL_more_queries#-requirements)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/SQL_more_queries#-author)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/SQL_more_queries#-author)
 
 ----------
 
@@ -183,7 +183,7 @@ id  name
 $
 ```
 <p align="center">
-    <img [Cheatsheet - SQL joins] src="">
+    <img [Cheatsheet - SQL joins] src="https://github.com/amandinekemp/holbertonschool-higher_level_programming/blob/main/SQL_more_queries/bc2575fee3303b731031.png">
 </p>
 
 ----------
@@ -192,7 +192,7 @@ $
 <summary>Tasks:</summary>
 
 ### 0. 0. My privileges!
-mandatory
+
 Write a script that lists all privileges of the MySQL users user_0d_1 and user_0d_2 on your server (in localhost).
 
 guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
