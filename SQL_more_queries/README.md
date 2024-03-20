@@ -21,7 +21,7 @@
 
 ## ➤ Description:
 
-* How to create a new MySQL user:
+**How to create a new MySQL user:**
 
 To create a new MySQL user, use the following command:
 ```
@@ -29,7 +29,7 @@ CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
 ```
 Replace "username" by the desired username and "password" by the desired password. You can also specify a different host by replacing "localhost" with the desired host.
 
-* How to manage privileges for a user to a database or table:
+**How to manage privileges for a user to a database or table:**
 
 To manage privileges for a user to a database or table, use the following command:
 ```
@@ -37,25 +37,25 @@ GRANT privilege ON database.* TO 'user_name'@'localhost';
 ```
 Replace "privilege" by the desired privilege (such as SELECT, INSERT, UPDATE, etc.), "base_de_data" by the desired database name and "username" by the desired user name. You can also specify a specific table by replacing "base_de\_données.\*" with "base_de\_données.table".
 
-* What's a PRIMARY KEY:
+**What's a PRIMARY KEY:**
 
 A primary key is a column or set of columns in a table that is used to uniquely identify each row in the table. A primary key must be unique and contain no null values.
 
 Translated with DeepL.com (free version)
 
-What's a FOREIGN KEY:
+**What's a FOREIGN KEY:**
 A foreign key is a column or set of columns in a table that refers to the primary key of another table. Foreign keys are used to create relationships between tables and to guarantee the referential integrity of data.
 
-How to use NOT NULL and UNIQUE constraints:
+**How to use NOT NULL and UNIQUE constraints:**
 The NOT NULL constraint is used to guarantee that a column does not contain null values. The UNIQUE constraint is used to ensure that a column does not contain duplicate values. You can use these constraints when creating or modifying a table by using the NOT NULL and UNIQUE keywords.
 
-How to retrieve datas from multiple tables in one request:
+**How to retrieve datas from multiple tables in one request:**
 To retrieve data from multiple tables in a single request, you can use a join. There are several types of join, including INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL OUTER JOIN. You can use the JOIN clause to specify the tables to be joined and the ON clause to specify the join conditions.
 
-What are subqueries?
+**What are subqueries?**
 A subquery is a query that is executed inside another query. Subqueries can be used to filter, sort or group data according to the results of another query. Subqueries are usually enclosed in parentheses in the WHERE or FROM clause.
 
-What are JOIN and UNION:
+**What are JOIN and UNION:**
 JOIN and UNION are operators used to combine data from several tables or queries. JOIN is used to combine rows from two or more tables according to specified conditions. UNION is used to combine the results of two or more queries into a single result table. Queries must have the same number of columns and compatible data types to be combined with UNION.
 
 ----------
