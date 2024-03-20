@@ -21,21 +21,42 @@
 
 ## ➤ Description:
 
-SQL (Structured Query Language) is a programming language used to communicate with relational databases. It enables data stored in these databases to be manipulated and managed in an efficient, structured way. Here are a few key points to remember about SQL:
+* How to create a new MySQL user:
 
-1. **Structured query language:** SQL is a structured query language that uses clear and precise syntax to interact with databases.
+To create a new MySQL user, use the following command:
+```
+CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+```
+Replace "username" by the desired username and "password" by the desired password. You can also specify a different host by replacing "localhost" with the desired host.
 
-2. **Data manipulation:** SQL allows you to perform various operations on data, such as inserting, modifying, deleting and retrieving data.
+* How to manage privileges for a user to a database or table:
 
-3. **Database creation and management:** SQL lets you create and manage databases, as well as create tables, indexes and other data structures.
+To manage privileges for a user to a database or table, use the following command:
+```
+GRANT privilege ON database.* TO 'user_name'@'localhost';
+```
+Replace "privilege" by the desired privilege (such as SELECT, INSERT, UPDATE, etc.), "base_de_data" by the desired database name and "username" by the desired user name. You can also specify a specific table by replacing "base_de\_données.\*" with "base_de\_données.table".
 
-4. **Declarative language:** SQL is a declarative language, which means that SQL queries describe the desired result, but do not specify how this result is to be obtained. This allows the database management system (DBMS) to choose the most efficient execution method.
+* What's a PRIMARY KEY:
 
-5. **Compatibility with various DBMS:** SQL is a standard language supported by most relational database management systems (RDBMS), such as MySQL, PostgreSQL, SQLite, Oracle, Microsoft SQL Server, etc.
+A primary key is a column or set of columns in a table that is used to uniquely identify each row in the table. A primary key must be unique and contain no null values.
 
-6. **Use of multiple clauses and commands:** SQL offers a variety of clauses and commands for performing complex operations on data, such as SELECT, INSERT, UPDATE, DELETE, JOIN, WHERE, GROUP BY, HAVING, ORDER BY, etc.
+Translated with DeepL.com (free version)
 
-In short, SQL is an essential tool for interacting with relational databases, whether for managing data, creating database structures or executing complex queries to analyze data.
+What's a FOREIGN KEY:
+A foreign key is a column or set of columns in a table that refers to the primary key of another table. Foreign keys are used to create relationships between tables and to guarantee the referential integrity of data.
+
+How to use NOT NULL and UNIQUE constraints:
+The NOT NULL constraint is used to guarantee that a column does not contain null values. The UNIQUE constraint is used to ensure that a column does not contain duplicate values. You can use these constraints when creating or modifying a table by using the NOT NULL and UNIQUE keywords.
+
+How to retrieve datas from multiple tables in one request:
+To retrieve data from multiple tables in a single request, you can use a join. There are several types of join, including INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL OUTER JOIN. You can use the JOIN clause to specify the tables to be joined and the ON clause to specify the join conditions.
+
+What are subqueries?
+A subquery is a query that is executed inside another query. Subqueries can be used to filter, sort or group data according to the results of another query. Subqueries are usually enclosed in parentheses in the WHERE or FROM clause.
+
+What are JOIN and UNION:
+JOIN and UNION are operators used to combine data from several tables or queries. JOIN is used to combine rows from two or more tables according to specified conditions. UNION is used to combine the results of two or more queries into a single result table. Queries must have the same number of columns and compatible data types to be combined with UNION.
 
 ----------
 
@@ -195,6 +216,7 @@ $
 
 Write a script that lists all privileges of the MySQL users user_0d_1 and user_0d_2 on your server (in localhost).
 
+```sql
 guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 ERROR 1141 (42000) at line 3: There is no such grant defined for user 'user_0d_1' on host 'localhost'
@@ -209,21 +231,24 @@ Grants for user_0d_1@localhost
 GRANT SELECT, INSERT, UPDA..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`                                                                                                                             
 GRANT APPLICATION_PASSWORD_ADMIN,AUDIT...,XA_RECOVER_ADMIN ON *.* TO `user_0d_1`@`localhost`                                        
 ERROR 1141 (42000) at line 4: There is no such grant defined for user 'user_0d_2' on host 'localhost'              
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 0-privileges.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 0-privileges.sql
   
-0/8 pts
-1. Root user
-mandatory
+### 1. Root user
+
 Write a script that creates the MySQL server user user_0d_1.
 
-user_0d_1 should have all privileges on your MySQL server
-The user_0d_1 password should be set to user_0d_1_pwd
-If the user user_0d_1 already exists, your script should not fail
+* user_0d_1 should have all privileges on your MySQL server
+* The user_0d_1 password should be set to user_0d_1_pwd
+* If the user user_0d_1 already exists, your script should not fail
+
+```sql
 guillaume@ubuntu:~/$ cat 1-create_user.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
@@ -232,22 +257,25 @@ Grants for user_0d_1@localhost
 GRANT SELECT, INSERT..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`                                                                                                                             
 GRANT APPLICATION_PASSWORD_ADMIN,...,XA_RECOVER_ADMIN ON *.* TO `user_0d_1`@`localhost`                                        
 ERROR 1141 (42000) at line 4: There is no such grant defined for user 'user_0d_2' on host 'localhost'
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 1-create_user.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 1-create_user.sql
   
-0/6 pts
-2. Read user
-mandatory
+### 2. Read user
+
 Write a script that creates the database hbtn_0d_2 and the user user_0d_2.
 
-user_0d_2 should have only SELECT privilege in the database hbtn_0d_2
-The user_0d_2 password should be set to user_0d_2_pwd
-If the database hbtn_0d_2 already exists, your script should not fail
-If the user user_0d_2 already exists, your script should not fail
+* user_0d_2 should have only SELECT privilege in the database hbtn_0d_2
+* The user_0d_2 password should be set to user_0d_2_pwd
+* If the database hbtn_0d_2 already exists, your script should not fail
+* If the user user_0d_2 already exists, your script should not fail
+
+```sql
 guillaume@ubuntu:~/$ cat 2-create_read_user.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
@@ -258,23 +286,26 @@ GRANT APPLICATION_PASSWORD_ADMIN,...,XA_RECOVER_ADMIN ON *.* TO `user_0d_1`@`loc
 Grants for user_0d_2@localhost                                                                                                
 GRANT USAGE ON *.* TO `user_0d_2`@`localhost`                                                                                 
 GRANT SELECT ON `hbtn_0d_2`.* TO `user_0d_2`@`localhost`  
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 2-create_read_user.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 2-create_read_user.sql
   
-0/6 pts
 3. Always a name
-mandatory
+
 Write a script that creates the table force_name on your MySQL server.
 
-force_name description:
-id INT
-name VARCHAR(256) can’t be null
-The database name will be passed as an argument of the mysql command
-If the table force_name already exists, your script should not fail
+* force_name description:
+  * id INT
+  * name VARCHAR(256) can’t be null
+* The database name will be passed as an argument of the mysql command
+* If the table force_name already exists, your script should not fail
+
+```sql
 guillaume@ubuntu:~/$ cat 3-force_name.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
 Enter password: 
 guillaume@ubuntu:~/$ echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2
@@ -290,23 +321,26 @@ guillaume@ubuntu:~/$ echo 'SELECT * FROM force_name;' | mysql -hlocalhost -uroot
 Enter password: 
 id  name
 89  Best School
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 3-force_name.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 3-force_name.sql
   
-0/6 pts
-4. ID can't be null
-mandatory
+### 4. ID can't be null
+
 Write a script that creates the table id_not_null on your MySQL server.
 
-id_not_null description:
-id INT with the default value 1
-name VARCHAR(256)
-The database name will be passed as an argument of the mysql command
-If the table id_not_null already exists, your script should not fail
+* id_not_null description:
+  * id INT with the default value 1
+  * name VARCHAR(256)
+* The database name will be passed as an argument of the mysql command
+* If the table id_not_null already exists, your script should not fail
+
+```sql
 guillaume@ubuntu:~/$ cat 4-never_empty.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
 Enter password: 
 guillaume@ubuntu:~/$ echo 'INSERT INTO id_not_null (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2
@@ -322,23 +356,26 @@ Enter password:
 id  name
 89  Best School
 1   Best
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 4-never_empty.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 4-never_empty.sql
   
-0/6 pts
-5. Unique ID
-mandatory
+### 5. Unique ID
+
 Write a script that creates the table unique_id on your MySQL server.
 
-unique_id description:
-id INT with the default value 1 and must be unique
-name VARCHAR(256)
-The database name will be passed as an argument of the mysql command
-If the table unique_id already exists, your script should not fail
+* unique_id description:
+  * id INT with the default value 1 and must be unique
+  * name VARCHAR(256)
+* The database name will be passed as an argument of the mysql command
+* If the table unique_id already exists, your script should not fail
+
+```sql
 guillaume@ubuntu:~/$ cat 5-unique_id.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
 Enter password: 
 guillaume@ubuntu:~/$ echo 'INSERT INTO unique_id (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2
@@ -354,23 +391,26 @@ guillaume@ubuntu:~/$ echo 'SELECT * FROM unique_id;' | mysql -hlocalhost -uroot 
 Enter password: 
 id  name
 89  Best School
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 5-unique_id.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 5-unique_id.sql
   
-0/6 pts
 6. States table
-mandatory
+
 Write a script that creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on your MySQL server.
 
-states description:
-id INT unique, auto generated, can’t be null and is a primary key
-name VARCHAR(256) can’t be null
-If the database hbtn_0d_usa already exists, your script should not fail
-If the table states already exists, your script should not fail
+* states description:
+  * id INT unique, auto generated, can’t be null and is a primary key
+  * name VARCHAR(256) can’t be null
+* If the database hbtn_0d_usa already exists, your script should not fail
+* If the table states already exists, your script should not fail
+
+```sql
 guillaume@ubuntu:~/$ cat 6-states.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 guillaume@ubuntu:~/$ echo 'INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas");' | mysql -hlocalhost -uroot -p hbtn_0d_usa
@@ -381,24 +421,27 @@ id  name
 1   California
 2   Arizona
 3   Texas
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 6-states.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 6-states.sql
   
-0/6 pts
-7. Cities table
-mandatory
+### 7. Cities table
+
 Write a script that creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa) on your MySQL server.
 
-cities description:
-id INT unique, auto generated, can’t be null and is a primary key
-state_id INT, can’t be null and must be a FOREIGN KEY that references to id of the states table
-name VARCHAR(256) can’t be null
-If the database hbtn_0d_usa already exists, your script should not fail
-If the table cities already exists, your script should not fail
+* cities description:
+  * id INT unique, auto generated, can’t be null and is a primary key
+  * state_id INT, can’t be null and must be a FOREIGN KEY that references to id of the states table
+  * name VARCHAR(256) can’t be null
+* If the database hbtn_0d_usa already exists, your script should not fail
+* If the table cities already exists, your script should not fail
+
+```sql
 guillaume@ubuntu:~/$ cat 7-cities.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 guillaume@ubuntu:~/$ echo 'INSERT INTO cities (state_id, name) VALUES (1, "San Francisco");' | mysql -hlocalhost -uroot -p hbtn_0d_usa
@@ -414,22 +457,25 @@ guillaume@ubuntu:~/$ echo 'SELECT * FROM cities;' | mysql -hlocalhost -uroot -p 
 Enter password: 
 id  state_id    name
 1   1   San Francisco
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 7-cities.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 7-cities.sql
   
-0/6 pts
-8. Cities of California
-mandatory
+### 8. Cities of California
+
 Write a script that lists all the cities of California that can be found in the database hbtn_0d_usa.
 
-The states table contains only one record where name = California (but the id can be different, as per the example)
-Results must be sorted in ascending order by cities.id
-You are not allowed to use the JOIN keyword
-The database name will be passed as an argument of the mysql command
+* The states table contains only one record where name = California (but the id can be different, as per the example)
+* Results must be sorted in ascending order by cities.id
+* You are not allowed to use the JOIN keyword
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ echo 'SELECT * FROM states;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
 Enter password: 
 id  name
@@ -451,22 +497,25 @@ Enter password:
 id  name
 1   San Francisco
 2   San Jose
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 8-cities_of_california_subquery.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 8-cities_of_california_subquery.sql
   
-0/6 pts
 9. Cities by States
-mandatory
+
 Write a script that lists all cities contained in the database hbtn_0d_usa.
 
-Each record should display: cities.id - cities.name - states.name
-Results must be sorted in ascending order by cities.id
-You can use only one SELECT statement
-The database name will be passed as an argument of the mysql command
+* Each record should display: cities.id - cities.name - states.name
+* Results must be sorted in ascending order by cities.id
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ echo 'SELECT * FROM states;' | mysql -hlocalhost -uroot -p hbtn_0d_usa
 Enter password: 
 id  name
@@ -492,24 +541,27 @@ id  name    name
 6   Paris   Texas
 7   Houston Texas
 8   Dallas  Texas
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 9-cities_by_state_join.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 9-cities_by_state_join.sql
   
-0/6 pts
-10. Genre ID by show
-mandatory
+### 10. Genre ID by show
+
 Import the database dump from hbtn_0d_tvshows to your MySQL server: download
 
 Write a script that lists all shows contained in hbtn_0d_tvshows that have at least one genre linked.
 
-Each record should display: tv_shows.title - tv_show_genres.genre_id
-Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
-You can use only one SELECT statement
-The database name will be passed as an argument of the mysql command
+* Each record should display: tv_shows.title - tv_show_genres.genre_id
+* Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ cat 10-genre_id_by_show.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
 Enter password: 
 title   genre_id
@@ -532,25 +584,28 @@ Silicon Valley  5
 The Big Bang Theory 5
 The Last Man on Earth   1
 The Last Man on Earth   5
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 10-genre_id_by_show.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 10-genre_id_by_show.sql
   
-0/6 pts
-11. Genre ID for all shows
-mandatory
+### 11. Genre ID for all shows
+
 Import the database dump of hbtn_0d_tvshows to your MySQL server: download (same as 10-genre_id_by_show.sql)
 
 Write a script that lists all shows contained in the database hbtn_0d_tvshows.
 
-Each record should display: tv_shows.title - tv_show_genres.genre_id
-Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
-If a show doesn’t have a genre, display NULL
-You can use only one SELECT statement
-The database name will be passed as an argument of the mysql command
+* Each record should display: tv_shows.title - tv_show_genres.genre_id
+* Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
+* If a show doesn’t have a genre, display NULL
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ cat 11-genre_id_all_shows.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
 Enter password: 
 title   genre_id
@@ -575,50 +630,56 @@ Silicon Valley  5
 The Big Bang Theory 5
 The Last Man on Earth   1
 The Last Man on Earth   5
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 11-genre_id_all_shows.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 11-genre_id_all_shows.sql
   
-0/6 pts
-12. No genre
-mandatory
+### 12. No genre
+
 Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 11-genre_id_all_shows.sql)
 
 Write a script that lists all shows contained in hbtn_0d_tvshows without a genre linked.
 
-Each record should display: tv_shows.title - tv_show_genres.genre_id
-Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
-You can use only one SELECT statement
-The database name will be passed as an argument of the mysql command
+* Each record should display: tv_shows.title - tv_show_genres.genre_id
+* Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ cat 12-no_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
 Enter password: 
 title   genre_id
 Better Call Saul    NULL
 Homeland    NULL
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 12-no_genre.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 12-no_genre.sql
   
-0/6 pts
-13. Number of shows by genre
-mandatory
+### 13. Number of shows by genre
+
 Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 12-no_genre.sql)
 
 Write a script that lists all genres from hbtn_0d_tvshows and displays the number of shows linked to each.
 
-Each record should display: <TV Show genre> - <Number of shows linked to this genre>
-First column must be called genre
-Second column must be called number_of_shows
-Don’t display a genre that doesn’t have any shows linked
-Results must be sorted in descending order by the number of shows linked
-You can use only one SELECT statement
-The database name will be passed as an argument of the mysql command
+* Each record should display: <TV Show genre> - <Number of shows linked to this genre>
+* First column must be called genre
+* Second column must be called number_of_shows
+* Don’t display a genre that doesn’t have any shows linked
+* Results must be sorted in descending order by the number of shows linked
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ cat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
 Enter password: 
 genre   number_of_shows
@@ -630,25 +691,28 @@ Suspense    2
 Thriller    2
 Adventure   1
 Fantasy 1
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 13-count_shows_by_genre.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 13-count_shows_by_genre.sql
   
-0/6 pts
-14. My genres
-mandatory
+### 14. My genres
+
 Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 13-count_shows_by_genre.sql)
 
 Write a script that uses the hbtn_0d_tvshows database to lists all genres of the show Dexter.
 
-The tv_shows table contains only one record where title = Dexter (but the id can be different)
-Each record should display: tv_genres.name
-Results must be sorted in ascending order by the genre name
-You can use only one SELECT statement
-The database name will be passed as an argument of the mysql command
+* The tv_shows table contains only one record where title = Dexter (but the id can be different)
+* Each record should display: tv_genres.name
+* Results must be sorted in ascending order by the genre name
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ cat 14-my_genres.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
 Enter password: 
 name
@@ -657,25 +721,28 @@ Drama
 Mystery
 Suspense
 Thriller
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 14-my_genres.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 14-my_genres.sql
   
-0/6 pts
-15. Only Comedy
-mandatory
+### 15. Only Comedy
+
 Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 14-my_genres.sql)
 
 Write a script that lists all Comedy shows in the database hbtn_0d_tvshows.
 
-The tv_genres table contains only one record where name = Comedy (but the id can be different)
-Each record should display: tv_shows.title
-Results must be sorted in ascending order by the show title
-You can use only one SELECT statement
-The database name will be passed as an argument of the mysql command
+* The tv_genres table contains only one record where name = Comedy (but the id can be different)
+* Each record should display: tv_shows.title
+* Results must be sorted in ascending order by the show title
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ cat 15-comedy_only.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
 Enter password: 
 title
@@ -683,25 +750,28 @@ New Girl
 Silicon Valley
 The Big Bang Theory
 The Last Man on Earth
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 15-comedy_only.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 15-comedy_only.sql
   
-0/6 pts
-16. List shows and genres
-mandatory
+### 16. List shows and genres
+
 Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 15-comedy_only.sql)
 
 Write a script that lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows.
 
-If a show doesn’t have a genre, display NULL in the genre column
-Each record should display: tv_shows.title - tv_genres.name
-Results must be sorted in ascending order by the show title and genre name
-You can use only one SELECT statement
-The database name will be passed as an argument of the mysql command
+* If a show doesn’t have a genre, display NULL in the genre column
+* Each record should display: tv_shows.title - tv_genres.name
+* Results must be sorted in ascending order by the show title and genre name
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+
+```sql
 guillaume@ubuntu:~/$ cat 16-shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
 Enter password: 
 title   name
@@ -726,12 +796,14 @@ Silicon Valley  Comedy
 The Big Bang Theory Comedy
 The Last Man on Earth   Comedy
 The Last Man on Earth   Drama
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
+```
+
 Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: SQL_more_queries
-File: 16-shows_by_genre.sql
+* GitHub repository: holbertonschool-higher_level_programming
+* Directory: SQL_more_queries
+* File: 16-shows_by_genre.sql
 
 </details>
 
