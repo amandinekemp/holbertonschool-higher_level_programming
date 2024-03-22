@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""This script takes as input an argument and displays all values in
-the hbtn_0e_0_usa state table where the name matches the argument supplied"""
+"""This script connects to a MySQL database and displays the values in the
+'states' table, where the name corresponds exactly to the input argument. """
 
 from sys import argv
 import MySQLdb
