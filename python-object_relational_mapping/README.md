@@ -10,18 +10,37 @@
 
 ## ➤ Menu:
 
-* [➤ Description]()
-* [➤ Resources]()
-* [➤ General]()
-* [➤ Requirements]()
-* [➤ Tasks]()
-* [➤ Author]()
+* [➤ Description](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping#-description)
+* [➤ Resources](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping#-resources)
+* [➤ General](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping#-general)
+* [➤ Requirements](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping#-requirements)
+* [➤ More Info](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping#-more-info)
+* [➤ Tasks](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping#-author)
+* [➤ Author](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping#-author)
 
 ----------
 
 ## ➤ Description:
 
+Object-relational mapping (ORM) is a technique used to convert data between the object-type system used in a programming language and the relational-type system used in a relational database.
 
+Using ORM, you can interact with a relational database as if you were manipulating objects in your programming language. This allows you to manage data more intuitively and reduce the amount of code needed to interact with the database.
+
+Here are a few examples of popular ORM libraries in Python:
+
+* SQLAlchemy: a powerful and flexible ORM library that supports many relational databases.
+* Django ORM: an ORM library integrated into the Django framework that supports many relational databases.
+* Peewee: a lightweight ORM library that supports SQLite, MySQL and PostgreSQL.
+* Flask-SQLAlchemy: an extension to the Flask framework that provides a simple interface for using SQLAlchemy.
+
+Here are just a few of the advantages of using an ORM:
+
+* You can manipulate data more intuitively by using objects instead of SQL queries.
+* You can reduce the amount of code needed to interact with the database.
+* You can easily change databases without having to modify your code.
+* You can use advanced features such as transaction management and caching.
+
+However, it's important to note that using an ORM can sometimes result in a loss of performance compared to using direct SQL queries. So it's important to understand your application's needs and choose the appropriate ORM accordingly.
 
 ----------
 
@@ -29,18 +48,18 @@
 
 Read or watch:
 
-* [Object-relational mappers]()
-* [mysqlclient/MySQLdb documentation] (please don’t pay attention to _mysql)()
-* [MySQLdb tutorial]()
-* [SQLAlchemy tutorial]()
-* [SQLAlchemy]()
-* [mysqlclient/MySQLdb]()
-* [Introduction to SQLAlchemy]()
-* [Flask SQLAlchemy]()
-* [10 common stumbling blocks for SQLAlchemy newbies]()
-* [Python SQLAlchemy Cheatsheet]()
-* [SQLAlchemy ORM Tutorial for Python Developers]() (Warning: This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL)
-* [SQLAlchemy Tutorial]()
+* [Object-relational mappers](https://intranet.hbtn.io/rltoken/tCytNeWUzuWhAn9APwtp9A)
+* [mysqlclient/MySQLdb documentation](https://intranet.hbtn.io/rltoken/V8KJv3QCReECPZ0V-kXRwg) (please don’t pay attention to _mysql)
+* [MySQLdb tutorial](https://intranet.hbtn.io/rltoken/j_7jU3C9Jsa0o53pgfwxOQ)
+* [SQLAlchemy tutorial](https://intranet.hbtn.io/rltoken/7y1s8FDE_0S-uhBtCgt5-A)
+* [SQLAlchemy](https://intranet.hbtn.io/rltoken/j6kxlUETdjiFwiu0k_JI6Q)
+* [mysqlclient/MySQLdb](https://intranet.hbtn.io/rltoken/vzsiR8tCdY3_OWsMH33jUA)
+* [Introduction to SQLAlchemy](https://intranet.hbtn.io/rltoken/7m6F57mBASM7A2r_GcIeMA)
+* [Flask SQLAlchemy](https://intranet.hbtn.io/rltoken/riV6WcWo1MGRpF3WSmv4Zw)
+* [10 common stumbling blocks for SQLAlchemy newbies](https://intranet.hbtn.io/rltoken/uRrjdEkHmjrVenCqjwJRWQ)
+* [Python SQLAlchemy Cheatsheet](https://intranet.hbtn.io/rltoken/RfLwdV21O_TVoQU4iwaIFw)
+* [SQLAlchemy ORM Tutorial for Python Developers](https://intranet.hbtn.io/rltoken/2BoGpuT2vAaoeuC3SN_wPA) (Warning: This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL)
+* [SQLAlchemy Tutorial](https://intranet.hbtn.io/rltoken/DrwY56jSHCOADKEbSOBa0A)
 
 ----------
 
