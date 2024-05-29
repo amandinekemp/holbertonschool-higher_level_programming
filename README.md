@@ -54,6 +54,31 @@ Due to its user-friendly features and versatility, Python is widely adopted by b
 
 ----------
 
+<p align="center">
+    <img [SQL and MySQL] src="https://www.simplilearn.com/ice9/free_resources_article_thumb/difference_between_sql_and_mysql.jpg">
+</p>
+
+----------
+
+## ➤ Projects:
+
+* [SQL_introduction](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/SQL_introduction)
+* [SQL_more_queries](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/SQL_more_queries)
+
+----------
+
+<p align="center">
+    <img [Javascript] src="https://miro.medium.com/v2/resize:fit:800/1*bxEkHw1xewxOFjmGunb-Cw.png">
+</p>
+
+----------
+
+## ➤ Projects:
+
+* [javascript-dom_manipulation](https://github.com/amandinekemp/holbertonschool-higher_level_programming/tree/main/javascript-dom_manipulation)
+
+----------
+
 ## ➤ Author:
 
 - Amandine KEMP
