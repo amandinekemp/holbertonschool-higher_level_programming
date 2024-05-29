@@ -79,6 +79,6 @@ Due to its user-friendly features and versatility, Python is widely adopted by b
 
 ----------
 
-## ➤ Author:
+## Author :
 
-- Amandine KEMP
+- Amandine KEMP | [Github](https://github.com/amandinekemp)
