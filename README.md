@@ -3,7 +3,7 @@
 ----------
 
 <p align="center">
-    <img [Python] src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.actuia.com%2Factualite%2Fest-ce-que-python-est-securise%2F&psig=AOvVaw07vEFbX7CSoEt61kBCBMtm&ust=1717080885151000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDP3_SOs4YDFQAAAAAdAAAAABAD">
+    <img [Python] src="https://teklessons.com/wp-content/uploads/2023/11/image.png">
 </p>
 
 ----------
