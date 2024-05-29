@@ -3,7 +3,7 @@
 ----------
 
 <p align="center">
-    <img [Python] src="https://www.ntuclearninghub.com/documents/39367/4216797/Python-Symbol.png/369e410e-a90f-f887-c2dc-61f7ef761476/">
+    <img [Python] src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.actuia.com%2Factualite%2Fest-ce-que-python-est-securise%2F&psig=AOvVaw07vEFbX7CSoEt61kBCBMtm&ust=1717080885151000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDP3_SOs4YDFQAAAAAdAAAAABAD">
 </p>
 
 ----------
